@@ -5,3 +5,7 @@ export const ADD_TO_CART = "ADD_TO_CART";
 export const INCREMENT = "INCREMENT";
 export const DECREMENT = "DECREMENT";
 export const DELETE_ITEM = "DELETE_ITEM";
+export const BANNER_CLOSE = "BANNER_CLOSE";
+export const TOTAL_ITEMS = "TOTAL_ITEMS";
+
+export const deleteproductscart ="deleteproductscart";

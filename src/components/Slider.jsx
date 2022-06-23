@@ -8,7 +8,7 @@ function Slider() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="images/headphone1.PNG"
+          src="images/slide1.jpg"
           alt="First slide"
          height="600px"
          width="400px"
@@ -21,7 +21,7 @@ function Slider() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="images/headphone2.PNG"
+          src="images/slide2.webp"
           alt="Second slide"
           height="600px"
           width="400px"
@@ -35,7 +35,7 @@ function Slider() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="images/headphone3.PNG"
+          src="images/slide3.jpg"
           alt="Third slide"
           height="600px"
           width="400px"

@@ -1,31 +1,36 @@
-import React from 'react'
+import React ,{useRef}from 'react'
 import {useParams} from 'react-router-dom'
 import {Col , Card , Button} from 'react-bootstrap';
 import {NavLink} from "react-router-dom";
+import "./css/product.css";
 
 function Product(props) {
   const {product,AddToCart} = props;
+  
 
   return (
-    
-      <Col>
-             
-            <Card style={{ width: '22rem', height:"20rem" }}  className="text-center box-shadow m-2">
-              <Card.Body>
-              <NavLink to={`/products/${product._id}`}>
-                  <Card.Img variant="top" src={product.img} className="w-50  mx-auto"/>
-                    <Card.Title>{product.title}</Card.Title>
-                    <Card.Text>
-                    {product.price}
-                    </Card.Text>
-                </NavLink>
-                <Button variant="primary" class="btn btn-danger mx-2" onClick={AddToCart}>Add To Cart</Button>
-              </Card.Body>
-            </Card>
-
-           
-       
-      </Col>
+  
+          <div className="card my-3 text-center mx-auto">
+          <NavLink to={`/products/${product._id}`}>
+            {product.sale !="" &&
+                    <div className="card-sale bg-black">
+                    <span className="text-white">{product.sale}</span>
+                    </div>
+            }
+              
+              <div className="card-img mx-auto">
+                <img src={`${product.img[0]}`}/>
+              </div>
+              <div className="card-details">
+                <h3>{product.title}</h3>
+                <p>{product.price}$</p>
+              </div>
+              </NavLink>
+            <button onClick={AddToCart} className="py-1 text-white">Add To Cart</button>
+            <div className={product.isInCart ? "inCart newInCart" : "inCart"}>
+                <span>Already in Cart</span>
+            </div>
+          </div>
   )
 }
 

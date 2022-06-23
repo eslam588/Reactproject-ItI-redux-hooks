@@ -1,0 +1,42 @@
+
+  .section7 .row .col-12 {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    position: relative;
+  }
+  
+  .section7 .article1 span {
+    display: block;
+    margin-top: -10px;
+  }
+  .section7 .article1 .links a {
+    display: inline-block;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 6px;
+  }
+  
+  .section7 .article2 a ,  .section7 .article3 a   {
+    display: block;
+    margin-bottom: 10px;
+    color: rgb(60, 53, 53);
+    text-decoration: none;
+  }
+  .section7 .article2 a:hover,   .section7 .article3 a:hover {
+    color: #1445e4;
+    font-weight: bold;
+  }
+  .section7 .article4 p:last-of-type {
+    display: flex;
+  }
+  
+  .section8 {
+    background-color: #741818;
+  }
+  
+  .section8 h5 {
+    font-size: 13px;
+  }
