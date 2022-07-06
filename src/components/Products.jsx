@@ -3,6 +3,9 @@ import {useDispatch , useSelector} from 'react-redux';
 import {productAction,filterbyNameAction,addtocartAction,filterbyCategoryAction,bannerClose} from"../redux/actions/productAction";
 import Product from './Product'
 import {Container , Row ,Form ,Col} from 'react-bootstrap'
+import ReactPaginate from 'react-paginate';
+
+
 
 function Products() {
    const dispatch = useDispatch();
@@ -50,14 +53,14 @@ function Products() {
   
   return (
     
-    <div className="bg-red-300 p-14 mb-5"> 
+    <div className=""> 
     <Container>
         <h1 className="text-center mt-2">products</h1>
         <Form clasName="w-50" >
             <Form.Group className="" controlId="formBasicEmail">
                 
-                <Form.Control type="text" placeholder="Search by Name ------------------" className="w-50 my-5 p-2 border-warning border-2 rounded-pill d-inline " onChange={(e)=> setSearchName(e.target.value)}/>
-                <Form.Select aria-label="Default select example" className="w-25  my-5 p-2  border-warning mx-auto border-2 rounded-pill d-inline mr-auto " onChange={(e)=> setSearchCatalog(e.target.value)}>
+                <Form.Control type="text" placeholder="Search by Name ------------------" className="w-50 my-5 p-2 border-warning border-2 rounded-pill d-inline-block mr-auto" onChange={(e)=> setSearchName(e.target.value)}/>
+                <Form.Select aria-label="Default select example" className="w-25  my-5 p-2  border-warning mx-auto border-2 rounded-pill d-inline-block " onChange={(e)=> setSearchCatalog(e.target.value)}>
                 <option value="all">All</option>
                 <option value="speaker">speaker</option>
                 <option value="headphone">headphone</option>

@@ -11,7 +11,8 @@ function Header() {
   return (
     <header id="header">
       <div class="container d-flex align-items-center justify-content-between  ">
-        <h1 class="logo "><a href="#home">Eclipse</a></h1>
+      <Link to="/home"><h1 class="logo "><a href="#home">Eclipse</a></h1></Link>
+        
         <nav id="navbar" class=" navbr order-last order-lg-0"> 
               <ul class="d-none d-lg-flex pt-3 mobile-ul" id="toggler-ul">
                 <li class="nav-item">

@@ -4,6 +4,19 @@
 }
 
 .details .product-img{
-    height:900px;
+ 
     width:100%;
+}
+
+
+.details .imgsrc{
+    width: 85%;
+    height:80%;
+}
+
+
+.details .cart-btn{
+    background-color:rgb(121, 26, 26) ;
+    color:white;
+    width: 30%;
 }

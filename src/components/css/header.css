@@ -6,14 +6,15 @@
   }
   #header h1 {
     margin: 0;
-    font-size: 35px;
-    text-shadow: 2px 2px #3b4a50;
-    color:rgb(237, 235, 235)
+    font-size: 40px;
+    color:rgb(19, 18, 18);
+    text-shadow: 5px 2px 2px  rgba(244, 195, 35, 0.6);
   }
-  
+
   #header a{
     text-decoration: none;
     color:#fff !important;
+   
   }
   
   #header .navbr{
