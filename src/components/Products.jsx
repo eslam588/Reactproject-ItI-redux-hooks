@@ -57,10 +57,11 @@ function Products() {
     <Container>
         <h1 className="text-center mt-2">products</h1>
         <Form clasName="w-50" >
-            <Form.Group className="" controlId="formBasicEmail">
+            <Form.Group className=" d-flex justify-content-between" controlId="formBasicEmail">
                 
-                <Form.Control type="text" placeholder="Search by Name ------------------" className="w-50 my-5 p-2 border-warning border-2 rounded-pill d-inline-block mr-auto" onChange={(e)=> setSearchName(e.target.value)}/>
-                <Form.Select aria-label="Default select example" className="w-25  my-5 p-2  border-warning mx-auto border-2 rounded-pill d-inline-block " onChange={(e)=> setSearchCatalog(e.target.value)}>
+                <Form.Control type="text" placeholder="Search by Name ------------------" className="forminput w-50 my-5 p-2 border-dark border-2 rounded-pill d-inline-block " onChange={(e)=> setSearchName(e.target.value)}/>
+                <Form.Select aria-label="Default select example" className=" forminput w-25  my-5 p-2  border-dark d-flex justify-content-start
+ border-2 rounded-pill d-inline-block  " onChange={(e)=> setSearchCatalog(e.target.value)}>
                 <option value="all">All</option>
                 <option value="speaker">speaker</option>
                 <option value="headphone">headphone</option>
@@ -102,10 +103,9 @@ function Products() {
                 ) 
             }))
             }
-            {/* {
-              (cat.length ==0 || prods.length ==0) ?
-              "":<p>no products</p>  
-            } */}
+            {
+              prods && prods.length===0 && <p className="fs-2 fw-2 my-5">no products matched</p>  
+            }
             
           </Row>  
         </div>

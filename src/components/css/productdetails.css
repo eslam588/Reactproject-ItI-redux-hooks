@@ -4,8 +4,19 @@
 }
 
 .details .product-img{
- 
-    width:100%;
+  max-width: 500px;
+  
+  margin: 10px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.details .product-img:hover{
+    background-size: 150%;
+  border:2px solid rgb(121, 26, 26);
+  cursor: zoom-in;
 }
 
 

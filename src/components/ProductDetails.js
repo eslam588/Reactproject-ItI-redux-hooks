@@ -29,10 +29,11 @@ function ProductDetails() {
   }, 1000);
   }
 
-
-  
    let srcimage = (detailsproduct.img);
   console.log(srcimage[0]);
+
+
+
    const imgDiv = useRef();
 
   const handleMouseMove = (e) =>{
@@ -45,17 +46,15 @@ function ProductDetails() {
     <div>
       <Container>
         <h1 className="text-center m-4">ProductDetails</h1>
-        <div className="details  d-lg-flex border p-2 mt-2"  >
-          <div className="product-img text-center "  onMouseMove={handleMouseMove}
+        <div className="details  d-lg-flex border p-2 mt-2">
+          <div className="product-img text-center  "  onMouseMove={handleMouseMove}
           ref={imgDiv} onMouseLeave = { () => imgDiv.current.style.backgroundPosition = `center`}
-          >
-          <img src={`../${srcimage[indexx]}`}  alt="Product" className="imgsrc mx-auto mt-4"/>
-          </div>
-          <div className="product-details fs-4 ">
+          style={{backgroundImage: `url(${`../${detailsproduct.img[indexx]}`})` ,  width:'1300px' , height:'430px'}}></div>
+          <div className="product-details fs-4  ms-4">
             <p><span className="text-success fs-3 fw-bold ">Product Name:</span> {detailsproduct.title}</p>
             <p><span  className="text-success fs-3 fw-bold" >Price:</span> {detailsproduct.price}</p>
             <p><span  className="text-success fs-3 fw-bold">Category:</span> {detailsproduct.category}</p>
-            <p><span  className="text-success fs-3 fw-bold">Description:</span><span className="">{detailsproduct.details}</span></p>
+            <p><span  className="text-success fs-3 fw-bold">Description:</span><span>{detailsproduct.details}</span></p>
            
             {
               srcimage.length>1 && srcimage.map((img,index)=>{

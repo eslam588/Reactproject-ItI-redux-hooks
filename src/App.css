@@ -33,3 +33,9 @@
 .halfproducts button.showall{
     background-color:rgb(255, 252, 248)
 }
+
+
+
+.forminput{
+    box-shadow: 1px -2px 17px 0px rgba(200, 33, 33, 0.38);
+}
