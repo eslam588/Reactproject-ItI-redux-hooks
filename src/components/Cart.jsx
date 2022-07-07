@@ -50,7 +50,7 @@ function Cart() {
   return (
     <div className="text-center">
       <Container>
-      <h1>cart</h1>
+      <h1 className="text-center fs-1 my-3">cart</h1>
       <div className="cart d-block d-lg-flex">
       <div className="items-cart d-block mx-auto">
         {cart.length > 0 ? (cart.map(item => {
@@ -60,7 +60,7 @@ function Cart() {
                <img src={`../${item.img[0]}`} width="150px" height="150px" className="mx-5"/>
                 <p className="mx-5 fs-5">{item.title}</p>
                 <button type="button" className="" onClick={()=>increment(item._id)}>+</button>
-                <span className="mx-6 fs-4 w-25">count : {item.count}</span>
+                <span className="mx-5 fs-4 w-25">count : {item.count}</span>
                 <button type="button" className="" onClick={()=>decrement(item._id)}>-</button>
                 <p className="mx-5 fs-4">{item.price*item.count}$</p>
                 <p className="mx-5"><BsTrash className="fs-1 mx-4 mt-2" onClick={()=> deleteitem(item._id)}/></p> 
@@ -70,7 +70,7 @@ function Cart() {
         )):<p className={`${cart.length == "0" ? "no-prod d-lg-block text-center" : "text-success fs-3 mt-5 text-center" }`}>no products in cart</p>}
 
         </div>
-        <div className="total  border mt-5 ms-4 p-5 h-50">
+        <div className="total  border mt-5 ms-4 p-5 h-75 border-3">
           <p className="text-success fs-2">TotalPrice:{total?total:0}$</p>
           <button className="btn btn-primary mt-3" onClick={()=> deleteallcart()} >checkOut</button>
           

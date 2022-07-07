@@ -1,71 +1,54 @@
-#header{
+.navbar-head{
     background-color: rgb(121, 26, 26);
     transition: all 0.5s ease-in-out;
     z-index: 999;
     box-shadow: 0px 2px 15px rgba(221, 224, 227, 0.5);
   }
-  #header h1 {
+  .navbar-head h1 {
     margin: 0;
     font-size: 40px;
     color:rgb(19, 18, 18);
     text-shadow: 5px 2px 2px  rgba(244, 195, 35, 0.6);
   }
 
-  #header a{
+  .navbar-head  a{
     text-decoration: none;
     color:#fff !important;
    
   }
   
-  #header .navbr{
-    padding-bottom: 0;
-  }
-  
-  #header .navbr ul li {
-    list-style-type: none;
-    padding-left:50px
-    
-  }
-  #header .navbr ul li a {
-    color: #fff !important;
 
-  }
   
-  
-  
-  
-  
-  
-  #header .navbr a ,#header .navbr a:focus{
+  .navbar-head .nav-links a , .navbar-head .nav-links a:focus{
     display: flex;
     font-size: 18px;
     transition:0.5s;
     border-bottom: 2px solid #fff;
-    border-radius: 40%;
+    /* border-radius: 40%; */
+    margin-right: 20px;
   }
-  #header .navbr a{
+  .navbar-head  .nav-links a{
     color: rgb(78, 70, 70);
     font-weight: bolder !important;
   }
-  #header .navbr a:hover ,#header .navbr .active ,#header .navbr .active:focus ,#header .navbr li:hover > a{
+  .navbar-head .nav-links a:hover , .navbar-head .nav-links .active ,.navbar-head .nav-links .active:focus{
     color:#0b0b0b;
-    border-bottom: 2px solid #010101;
-    border-radius: 40%;
+    border-bottom: 2px solid #010101; 
   }
 
 
-  #header a p{
+  .navbar-head a p{
     position: relative;
     margin-top:20px
 
     
   }
-  #header a p span{
+  .navbar-head a p span{
     position: absolute;
     width: 10px;
     height: 10px;
     top:-10px;
-    right:-10px;
+    right:5px;
     background-color: #0e0e0e;
     padding:10px;
     line-height:5px;
