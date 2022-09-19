@@ -1,9 +1,9 @@
 import React , {useEffect , useState} from 'react'
 import {useDispatch , useSelector} from 'react-redux';
-import {productAction,filterbyNameAction,addtocartAction,filterbyCategoryAction,bannerClose} from"../redux/actions/productAction";
+import {filterbyNameAction,addtocartAction,filterbyCategoryAction,bannerClose} from"../redux/actions/productAction";
 import Product from './Product'
 import {Container , Row ,Form ,Col} from 'react-bootstrap'
-import ReactPaginate from 'react-paginate';
+
 
 
 
@@ -33,15 +33,6 @@ function Products() {
   let filterbyCatalog = (searchCatalog) =>{
     filterbyCategoryAction(dispatch,searchCatalog); 
   }
-
-
-//   let getallProducts = () =>{
-//     productAction(dispatch);
-// }
-  
-//   useEffect(() => {
-//     getallProducts();
-//   },[])
 
 
   let AddToCart = (id) => {
@@ -76,7 +67,7 @@ function Products() {
         <Row>   
           
             {
-             products && products.length>0 && searchName==="" && searchCatalog=="all"&&( products.map((product)=> {
+             products && products.length>0 && searchName==="" && searchCatalog==="all"&&( products.map((product)=> {
                 return(
                   <Col className="col col-md-6 col-lg-3">
                   <Product product={product} AddToCart={()=>AddToCart(product._id)} />
@@ -86,7 +77,7 @@ function Products() {
             
             }
             {
-             prods && prods.length>0 && searchName !="" && searchCatalog=="all" &&( prods.map((product)=> {
+             prods && prods.length>0 && searchName !=="" && searchCatalog==="all" &&( prods.map((product)=> {
                 return(
                   <Col className="col col-md-6 col-lg-3">
                   <Product product={product} AddToCart={()=>AddToCart(product._id)} />
@@ -95,7 +86,7 @@ function Products() {
             }))
             }
             {
-             cat && cat.length>0 && searchCatalog!="all" &&( cat.map((product)=> {
+             cat && cat.length>0 && searchCatalog!=="all" &&( cat.map((product)=> {
                 return(
                   <Col className="col col-md-6 col-lg-3">
                   <Product product={product} AddToCart={()=>AddToCart(product._id)} />
@@ -105,8 +96,7 @@ function Products() {
             }
             {
               prods && prods.length===0 && <p className="fs-2 fw-2 my-5">no products matched</p>  
-            }
-            
+            }  
           </Row>  
         </div>
     </Container>
