@@ -16,7 +16,7 @@ import {Link} from "react-router-dom";
 function Home() {
   const dispatch = useDispatch();
   let {products} = useSelector(state => state.productreducer);
-  let saleprodcts=products.filter(product => product.sale!="");
+  let saleprodcts=products.filter(product => product.sale!=="");
 
   let productshalf= products.slice(0,12);
 

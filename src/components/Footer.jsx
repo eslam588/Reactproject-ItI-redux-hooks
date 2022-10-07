@@ -8,7 +8,9 @@ import { ImFacebook, ImTwitter,ImGooglePlus,ImLinkedin2} from "react-icons/im";
 
 
 function Footer() {
+
   return (
+    /* eslint-disable-next-line jsx-a11y/anchor-is-valid */
     <div>
       <section className="section7 pt-4 mt-5 text-light bg-light">
         <div className="container">
@@ -18,23 +20,23 @@ function Footer() {
                     <h4 className="fw-bold fst-italic">KIST Hospital Road</h4>
                     <p className="mb-4">Email: prcare@example.com</p>
                     <div className="links">
-                        <a href="#" className="bg-primary inline-block text-white fs-5"><ImFacebook/></a>
-                        <a href="#" className="bg-primary inline-block text-white fs-5"><ImTwitter/></a>
-                        <a href="#" className="bg-primary inline-block text-white fs-5"><ImGooglePlus/></a>
-                        <a href="#" className="bg-primary inline-block text-white fs-5 "><ImLinkedin2/></a>
+                        <a href="javascript:void(0)" className="bg-primary inline-block text-white fs-5"><ImFacebook/></a>
+                        <a href="javascript:void(0)" className="bg-primary inline-block text-white fs-5"><ImTwitter/></a>
+                        <a href="javascript:void(0)" className="bg-primary inline-block text-white fs-5"><ImGooglePlus/></a>
+                        <a href="javascript:void(0)" className="bg-primary inline-block text-white fs-5 "><ImLinkedin2/></a>
                     </div>
                 </div>
                 <div className="col-12 col-md-6 col-lg-3 article2 ">
                     <h5 className="mb-5">Explore Link</h5>
-                        <a href="#"><BsFillCaretRightFill/>Our Services</a>
-                        <a href="#"><BsFillCaretRightFill/>Meet Our Team</a>
-                        <a href="#"><BsFillCaretRightFill/>Forum</a>
+                        <a href="javascript:void(0)"><BsFillCaretRightFill/>Our Services</a>
+                        <a href="javascript:void(0)"><BsFillCaretRightFill/>Meet Our Team</a>
+                        <a href="javascript:void(0)"><BsFillCaretRightFill/>Forum</a>
                 </div>
                 <div className="col-12 col-md-6 col-lg-3 article3">
                     <h5 className="mb-5">Latest Post</h5>
-                    <a href="#"><BsFillCaretRightFill/>Our Services</a>
-                        <a href="#"><BsFillCaretRightFill/>Meet Our Team</a>
-                        <a href="#"><BsFillCaretRightFill/>Forum</a>
+                    <a href="javascript:void(0)"><BsFillCaretRightFill/>Our Services</a>
+                        <a href="javascript:void(0)"><BsFillCaretRightFill/>Meet Our Team</a>
+                        <a href="javascript:void(0)"><BsFillCaretRightFill/>Forum</a>
                 </div>
                 <div className="col-12 col-md-6 col-lg-3 article4 ">
                     <h5 className="mb-5">Contact Us</h5>

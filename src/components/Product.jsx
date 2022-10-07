@@ -1,6 +1,6 @@
-import React ,{useRef}from 'react'
-import {useParams} from 'react-router-dom'
-import {Col , Card , Button} from 'react-bootstrap';
+import React from 'react'
+// import {useParams} from 'react-router-dom'
+// import {Col , Card , Button} from 'react-bootstrap';
 import {NavLink} from "react-router-dom";
 import "./css/product.css";
 
@@ -12,14 +12,14 @@ function Product(props) {
   
           <div className="card my-3 text-center mx-auto">
           <NavLink to={`/products/${product._id}`}>
-            {product.sale !="" &&
+            {product.sale !=="" &&
                     <div className="card-sale bg-black">
                     <span className="text-white">{product.sale}</span>
                     </div>
             }
               
               <div className="card-img mx-auto">
-                <img src={`${product.img[0]}`}/>
+                <img src={`${product.img[0]}`} alt="img" />
               </div>
               <div className="card-details">
                 <h3>{product.title}</h3>

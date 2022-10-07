@@ -67,7 +67,7 @@ function Cart() {
                </div>
           )
         }
-        )):<p className={`${cart.length == "0" ? "no-prod d-lg-block text-center" : "text-success fs-3 mt-5 text-center" }`}>no products in cart</p>}
+        )):<p className={`${cart.length === "0" ? "no-prod d-lg-block text-center" : "text-success fs-3 mt-5 text-center" }`}>no products in cart</p>}
 
         </div>
         <div className="total  border mt-5 ms-4 p-5 h-75 border-3">

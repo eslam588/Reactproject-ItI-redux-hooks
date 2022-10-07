@@ -2,7 +2,7 @@ import React, {useRef,useState} from 'react'
 import {useParams} from 'react-router-dom';
 import {addtocartAction,bannerClose} from"../redux/actions/productAction";
 import {useSelector , useDispatch} from 'react-redux';
-import {Container,Row,Col} from 'react-bootstrap'
+import {Container} from 'react-bootstrap'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/autoplay'

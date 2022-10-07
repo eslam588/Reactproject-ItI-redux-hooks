@@ -1,5 +1,4 @@
-import axios from "axios";
-import {GET_PRODUCTS , GET_BY_NAME, GET_BY_CATALOG ,ADD_TO_CART ,INCREMENT, DECREMENT,DELETE_ITEM ,BANNER_CLOSE,TOTAL_ITEMS,deleteproductscart} from "../actions/types"
+import {GET_BY_NAME, GET_BY_CATALOG ,ADD_TO_CART ,INCREMENT, DECREMENT,DELETE_ITEM ,BANNER_CLOSE,TOTAL_ITEMS,deleteproductscart} from "../actions/types"
 
 
 

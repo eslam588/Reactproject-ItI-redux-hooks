@@ -1,5 +1,5 @@
-import { bannerClose } from "../actions/productAction"
-import { GET_PRODUCTS, GET_BY_NAME, GET_BY_CATALOG, ADD_TO_CART, INCREMENT, DECREMENT, DELETE_ITEM ,BANNER_CLOSE,TOTAL_ITEMS,deleteproductscart} from "../actions/types"
+
+import {GET_BY_NAME, GET_BY_CATALOG, ADD_TO_CART, INCREMENT, DECREMENT, DELETE_ITEM ,BANNER_CLOSE,TOTAL_ITEMS,deleteproductscart} from "../actions/types"
 
 const initialState = {
     products: [{
@@ -463,7 +463,7 @@ const productReducer = (state = initialState, action) => {
     // }
 
     //filter by name
-    if (action.type == GET_BY_NAME) {
+    if (action.type === GET_BY_NAME) {
 
         if (action.payload === "") {
             return state
