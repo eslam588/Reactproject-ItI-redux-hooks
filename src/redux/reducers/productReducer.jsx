@@ -485,7 +485,7 @@ const productReducer = (state = initialState, action) => {
         }
         else {
             let newproducts = [...state.products];
-            let filterproducts = newproducts.filter(product => product.category == action.payload);
+            let filterproducts = newproducts.filter(product => product.category === action.payload);
             return { ...state, cat: filterproducts };
         }
     }

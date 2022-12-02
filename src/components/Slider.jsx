@@ -42,7 +42,7 @@ function Slider() {
       </Carousel.Item>
     </Carousel>
     <div className="overlay">
-         <p className="writer">Welcome To App Store</p>
+         <p className="writer"></p>
       </div>
     </div>
   )
