@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Reactproject-ItI-redux-hooks/static/css/main.24b4e539.css",
+    "main.js": "/Reactproject-ItI-redux-hooks/static/js/main.aaf6ab66.js",
+    "index.html": "/Reactproject-ItI-redux-hooks/index.html",
+    "main.24b4e539.css.map": "/Reactproject-ItI-redux-hooks/static/css/main.24b4e539.css.map",
+    "main.aaf6ab66.js.map": "/Reactproject-ItI-redux-hooks/static/js/main.aaf6ab66.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24b4e539.css",
+    "static/js/main.aaf6ab66.js"
+  ]
+}
